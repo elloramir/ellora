@@ -7,18 +7,18 @@
 
 int main ( void )
 {
-	Test(
-		"Two strings are equal",
-		StringEqual(
-			GetStr("sailor"),
-			GetStr("sailor")));
+  Test(
+    "Two strings are equal",
+    StringEqual(
+      GetStr("sailor"),
+      GetStr("sailor")));
 
-	{
-		String a = GetStr("sailor");
-		String b = StrCopy(a);
+  {
+    String a = GetStr("sailor");
+    String b = StrCopy(a);
 
-		Test(
-			"Copy string \"a\" to string \"b\" and test if are equal",
-			StringEqual(a, b));
-	}
+    Test(
+      "Copy string \"a\" to string \"b\" and test if are equal",
+      StringEqual(a, b));
+  }
 }
